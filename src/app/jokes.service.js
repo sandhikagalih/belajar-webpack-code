@@ -1,7 +1,7 @@
-class JokesService {
+export class JokesService {
   constructor() {
-    this.tombolJokes = document.querySelector('#jokes-receh');
-    this.modalBody = document.querySelector('.modal-body');
+    this.tombolJokes = document.querySelector("#jokes-receh");
+    this.modalBody = document.querySelector(".modal-body");
   }
 
   setModal(str) {
@@ -9,6 +9,6 @@ class JokesService {
   }
 
   onClick(cb) {
-    this.tombolJokes.addEventListener('click', cb);
+    this.tombolJokes.addEventListener("click", cb);
   }
 }

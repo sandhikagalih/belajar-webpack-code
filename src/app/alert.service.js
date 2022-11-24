@@ -1,20 +1,22 @@
-class AlertService {
+import { cekInputValid } from "./utils/cekInputValid.js";
+
+export class AlertService {
   constructor() {
-    this.error = document.querySelector('#error');
+    this.error = document.querySelector("#error");
   }
 
   tampilkanErrorPenjumlahan = (input, angka) => {
     const hasil = input.reduce((pesan, nilai, index) => {
       if (cekInputValid(angka[index])) {
-        return pesan + '';
+        return pesan + "";
       } else {
         return pesan + `${nilai} itu bukan angka! `;
       }
-    }, 'Silahkan masukkan angka yang benar: ');
+    }, "Silahkan masukkan angka yang benar: ");
 
-    this.error.classList.remove('d-none');
+    this.error.classList.remove("d-none");
     this.error.innerText = hasil;
   };
 
-  sembunyikanError = () => this.error.classList.add('d-none');
+  sembunyikanError = () => this.error.classList.add("d-none");
 }
