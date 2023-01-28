@@ -1,4 +1,4 @@
-class CalculatorService {
+export class CalculatorService {
   constructor() {
     this.operand1 = document.querySelector('#operand1');
     this.operand2 = document.querySelector('#operand2');
