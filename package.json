@@ -1,0 +1,24 @@
+{
+  "name": "belajar-webpack-code",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mochammad-fachorrozi/belajar-webpack-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mochammad-fachorrozi/belajar-webpack-code/issues"
+  },
+  "homepage": "https://github.com/mochammad-fachorrozi/belajar-webpack-code#readme",
+  "devDependencies": {
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

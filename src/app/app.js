@@ -1,6 +1,5 @@
-const alertService = new AlertService();
-const calculatorService = new CalculatorService();
-const jokesService = new JokesService();
+const cekInputValid = require('./utils/cekInputValid');
+const parseInput = require('./utils/parseInput');
 
 const run = (alertService, calculatorService, jokesService) => {
   alertService.sembunyikanError();
@@ -27,4 +26,4 @@ const run = (alertService, calculatorService, jokesService) => {
   });
 };
 
-run(alertService, calculatorService, jokesService);
+module.exports = run;
