@@ -1,4 +1,4 @@
-class JokesService {
+module.exports = class JokesService {
   constructor() {
     this.tombolJokes = document.querySelector('#jokes-receh');
     this.modalBody = document.querySelector('.modal-body');

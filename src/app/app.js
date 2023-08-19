@@ -1,3 +1,6 @@
+const cekInputValid = require('.utils/cekInputValid');
+const parseInput = require('.utils/parseInput');
+
 const alertService = new AlertService();
 const calculatorService = new CalculatorService();
 const jokesService = new JokesService();
@@ -27,4 +30,4 @@ const run = (alertService, calculatorService, jokesService) => {
   });
 };
 
-run(alertService, calculatorService, jokesService);
+module.exports = run;
